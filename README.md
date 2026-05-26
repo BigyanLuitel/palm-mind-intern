@@ -23,7 +23,6 @@ Built with FastAPI, Qdrant, Redis, Supabase, and Groq (LLaMA 3.3 70B). No LangCh
 ## Project structure
 
 <pre>
-```text
 app/
 ├── main.py
 ├── core/
@@ -44,7 +43,6 @@ app/
 │   └── db_models.py
 └── schemas/
     └── schemas.py
-```
 </pre>
 
 ## Setup
