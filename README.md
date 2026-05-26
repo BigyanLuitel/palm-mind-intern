@@ -22,26 +22,30 @@ Built with FastAPI, Qdrant, Redis, Supabase, and Groq (LLaMA 3.3 70B). No LangCh
 
 ## Project structure
 
+<pre>
+```text
 app/
 ├── main.py
 ├── core/
-│ ├── config.py # env vars via pydantic-settings
-│ └── database.py # async sqlalchemy engine
+│   ├── config.py        # env vars via pydantic-settings
+│   └── database.py      # async sqlalchemy engine
 ├── api/
-│ ├── ingest.py # POST /ingest/
-│ └── chat.py # POST /chat/, DELETE /chat/{session_id}
+│   ├── ingest.py        # POST /ingest/
+│   └── chat.py          # POST /chat/, DELETE /chat/{session_id}
 ├── services/
-│ ├── chunker.py # fixed and semantic chunking
-│ ├── embedder.py # huggingface embeddings
-│ ├── vector_store.py # qdrant operations
-│ ├── retriever.py # custom rag pipeline
-│ ├── memory.py # redis chat history
-│ ├── llm.py # groq client
-│ └── booking.py # booking detection and extraction
+│   ├── chunker.py       # fixed and semantic chunking
+│   ├── embedder.py      # huggingface embeddings
+│   ├── vector_store.py  # qdrant operations
+│   ├── retriever.py     # custom rag pipeline
+│   ├── memory.py        # redis chat history
+│   ├── llm.py           # groq client
+│   └── booking.py       # booking detection and extraction
 ├── models/
-│ └── db_models.py
+│   └── db_models.py
 └── schemas/
-└── schemas.py
+    └── schemas.py
+```
+</pre>
 
 ## Setup
 
